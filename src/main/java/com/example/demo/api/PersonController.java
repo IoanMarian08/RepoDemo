@@ -1,6 +1,7 @@
 package com.example.demo.api;
 
 import com.example.demo.model.Person;
+import com.example.demo.service.AnimalService;
 import com.example.demo.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -12,10 +13,12 @@ import java.util.List;
 public class PersonController {
 
     private final PersonService personService;
+    private final AnimalService animalService;
 
     @Autowired
-    public PersonController(PersonService personService) {
+    public PersonController(PersonService personService, AnimalService animalService) {
         this.personService = personService;
+        this.animalService = animalService;
     }
 
     @PostMapping
