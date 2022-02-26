@@ -22,7 +22,7 @@ public class PersonService {
         return personDao.insertPerson(person);
     }
 
-    //get toate persoanele
+    //get all persons
     public List<Person> getAllPeope() {
         return personDao.selectAllPeople();
     }
