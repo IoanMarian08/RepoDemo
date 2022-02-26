@@ -22,7 +22,7 @@ public class PersonService {
         return personDao.insertPerson(person);
     }
 
-    //get all persons
+    //second comm
     public List<Person> getAllPeope() {
         return personDao.selectAllPeople();
     }
