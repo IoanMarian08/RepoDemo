@@ -22,6 +22,7 @@ public class PersonService {
         return personDao.insertPerson(person);
     }
 
+    //get all persons
     public List<Person> getAllPeope() {
         return personDao.selectAllPeople();
     }
